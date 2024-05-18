@@ -1,4 +1,3 @@
-import React from 'react'
 import './Entertainment.css'
 const Entertainment = () => {
   return (
@@ -24,7 +23,7 @@ arrow_forward_ios
       <div className="ent-text-small hovereff">Amanda Seyfried became 'really obsessed with ghost stories</div>
       <div className="ent-text-large hovereff">Hollywood actress Amanda Seyfried has recalled the time when she became obsessed with ghost stories</div>
       </div>
-    
+
 
 
       <div className="ent-card-container">

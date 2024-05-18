@@ -1,6 +1,4 @@
-import Ad from './Ad/Ad'
 import './App.css'
-import holding from './assets/pkhabar-holding.png'
 import Dontmiss from './DontMiss/Dontmiss'
 import Entertainment from './Entertainment/Entertainment'
 import GetLU from './GetLatestUpdates/GetLU'

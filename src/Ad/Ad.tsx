@@ -1,4 +1,3 @@
-import React from 'react'
 import './Ad.css'
 import pkhabarBranding from '../assets/pkhabar-branding.png'
 const Ad = () => {

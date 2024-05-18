@@ -1,4 +1,3 @@
-import React from 'react'
 import './LifeStyle.css'
 import limage from '../assets/lifestyleImg.png'
 import limage2 from '../assets/limg2.png'

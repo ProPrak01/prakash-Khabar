@@ -1,4 +1,3 @@
-import React from 'react'
 import './Video.css'
 import videoasset from '../assets/Videoass.png'
 
@@ -18,7 +17,7 @@ const Video = () => {
       </div>
       <div  className="dms-content">
       <div  className="Entertainment-image relative">
-        
+
         <div className="playbutton">
         <span className="material-symbols-outlined">
 play_arrow

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import './Holding.css'
 import holding from '../assets/pkhabar-holding.png'
 const Holding = () => {

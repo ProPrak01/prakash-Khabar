@@ -1,10 +1,5 @@
-import React from 'react'
 import './GetLU.css'
-import twitterx from '../assets/twitterx.png'
-import youtube from '../assets/youtubex.png'
-import insta from '../assets/instax.png'
-import fb from '../assets/facebookx.png'
-import Ad from '../Ad/Ad'
+
 
 const GetLU = () => {
   return (

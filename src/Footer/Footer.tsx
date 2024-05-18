@@ -1,4 +1,3 @@
-import React from 'react'
 import './Footer.css'
 import mainLogo from "../assets/pkhabar-logo.png"
 import facebook from "../assets/facebook.png";
