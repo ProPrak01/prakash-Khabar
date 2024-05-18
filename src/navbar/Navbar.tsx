@@ -1,29 +1,130 @@
+import {useState,useEffect} from 'react';
 import facebook from "../assets/facebook.png";
 import twitter from "../assets/twitter.png";
 import youtube from "../assets/youtube_3670147.png";
 
 import "./Navbar.css";
-const Navbar = () => {
+import axios from 'axios';
+
+const Navbar = ({breakingNews}) => {
+  const [weatherData , setWeatherData] = useState({});
+  const [mylocation, setLocation] = useState(null);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchLocation = async (latitude, longitude) => {
+      try {
+        const response = await axios.get('https://api.opencagedata.com/geocode/v1/json', {
+          params: {
+            q: `${latitude}+${longitude}`,
+            key: 'd45bd8161d284aaaa7be6f168ada5765'
+          }
+        });
+        const place = response.data.results[0].formatted;
+        setLocation(place);
+        const fetchweather = async () => {
+          try {
+            const response = await axios.get('http://api.weatherapi.com/v1/current.json',{
+              params: {
+                key: 'c9ef802b900a4bd591080700242704',
+                q: `${mylocation}`
+              }
+            });
+            setWeatherData(response.data);
+            console.log(response.data)
+          } catch (err) {
+           
+          }
+        };
+      
+        fetchweather();
+      } catch (err) {
+        setError(err);
+      }
+    };
+
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const { latitude, longitude } = position.coords;
+          fetchLocation(latitude, longitude);
+           
+        },
+        (err) => {
+          setError(err);
+        }
+      );
+
+
+
+
+
+    } else {
+      setError(new Error('Geolocation is not supported by this browser.'));
+    }
+  }, []);
+
+
+
+  // useEffect(()=>{
+  //   const fetchweather = async () => {
+  //     try {
+  //       const response = await axios.get('http://api.weatherapi.com/v1/current.json?key=c9ef802b900a4bd591080700242704&q=Bihar')
+  //       setWeatherData(response.data);
+  //       console.log(response.data)
+  //     } catch (err) {
+       
+  //     }
+  //   };
+  
+  //   fetchweather();
+      
+  // },[])
+
+
+const { current } = weatherData;
+var today = new Date()
+const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+const currentDay = daysOfWeek[today.getDay()];
+
+
+const monthsOfYear = [
+  'January', 'February', 'March', 'April', 'May', 'June', 
+  'July', 'August', 'September', 'October', 'November', 'December'
+];
+const currentMonth = monthsOfYear[today.getMonth()];
+
+
+// if (error) return <p>Error: {error.message}</p>;
+// if (!location) return <p>Loading...</p>;
   return (
     <div className="Navbar-container">
       <div className="navdata">
-        <div className="weather">15*</div>
+      <div className="weather">{current?.temp_c} &#176;C</div>
         <div className="place">
-          New  York</div>
+          {mylocation}</div>
         <div className="date">  
         <span style={{marginRight:"0.4vh"}} className="material-symbols-outlined">schedule</span>
-         <div className="text">          Wednesday, 10 January 2021
+         <div className="text">{currentDay}{" "}{today.getDate()}  {" "} {currentMonth} {" "} {today.getFullYear()}
 </div>
           </div>
         <div className="BreakingNewsTag">Breaking News</div>
         <div className="BreakingNews">
-          Indonesia says located black box recorders from crashed plane
-        </div>
+  <div className="marquee">
+    <p>
+      {breakingNews.description} {"........"}
+    </p>
+    <p>
+    {breakingNews.description}{".........."}
+    </p>
+  </div>
+</div>
       </div>
       <div className="socialmedia">
-        <img src={facebook} alt="" height={40} />
-        <img src={twitter} alt="" height={40} />
-        <img src={youtube} alt="" height={40} />
+        <a className="sm-a" href='https://www.facebook.com/'> <img  src={facebook} alt="" height={40} /></a>
+       
+       <a className="sm-a" href='https://www.x.com/'><img src={twitter} alt="" height={40} /></a> 
+       <a className="sm-a" href='https://www.youtube.com/'> <img src={youtube} alt="" height={40} /></a>
       </div>
     </div>
   );
