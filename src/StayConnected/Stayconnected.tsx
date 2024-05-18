@@ -1,4 +1,3 @@
-import React from 'react'
 import './Stayconnected.css'
 import twitterx from '../assets/twitterx.png'
 import youtube from '../assets/youtubex.png'

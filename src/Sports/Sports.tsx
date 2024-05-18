@@ -1,4 +1,3 @@
-import React from 'react'
 import './Sports.css'
 const Sports = () => {
   return (

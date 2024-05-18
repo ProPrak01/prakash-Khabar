@@ -1,5 +1,5 @@
-import React from 'react'
 import './News.css'
+
 const News = () => {
   return (
     <div className='News-container'>
@@ -14,7 +14,7 @@ Done</div>
           <div className="topLeft">
           <img src="https://s3-alpha-sig.figma.com/img/4403/976d/37919faf1ac5c065af92c04f5b305bdc?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RkXxJ4KhX31moMEtOZHk8Z9nReNbc6TmsnutG30godaD80iNQ7DwHW54nnI1dUMNpMbcesFnFts6a8WEDkQFVzgT1ag5rC-Q~0es3jqEKtihWcKZ3-X9qfIJyf9nAZ-cEnd-wxs904vPIWWkx4mGZWAeaiI1gRkjZaFA-ZwpDVNKokxR~BBlv1VQmdFf4D6ZBbiGV6CX7-91Jfk0WH-1l5iZ9-9HWmTgmJXikAryxjGvHJtbGkYL73jyMFseMWwun0utyqj~GUUbYxM7SVOEwFxE7k73sek-hwX5aQdgSAWBq9WiMRvtTWIP9Be~s18-enDAAZ3SvRJgQsZNQbZKOw__" alt="image" />
       <div className="text-small bottom-13vh">Craig Bator - 27 Dec 2020</div>
-      <div className="text-large font-3vh">They’re back! Kennedy Darling named to return to</div>
+      <div className="text-large font-3vh">They're back! Kennedy Darling named to return to</div>
           </div>
           <div className="topRight">
           <img src="https://s3-alpha-sig.figma.com/img/e570/d995/94e093541cfeb50da9285aea1f933d93?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=L8egP4zwnIWzRx-gquoqY5HfTTSAoCmvRlCaPhMfAbPTaezu8ajr6mRfm6-ikzWo38Nr4wOX8HieW7FTOMU9pKZuh4QIlCGYoIYiWCAwSpU4AWRnFybZgMhCHeiA5VVYr4xM3fKb1sioEuojubLht6MNW0AylMnfCjIG1Qzjo4dp1OdgEUgOZQtgkWbFnhKxeEpFxqbnOfQGd8c6u8-RhksNnbKoghk~idCArKDesVPNzWEs-t3tPyavEdGaCChYHZUZg0wgReHkddz~vLG1W~LKtfhUfh1FUDtL0GkKQL8eVFE9HSU98DIbSnxyXb7xZyoD1uEDDHPy~T7ePn-3Gw__" alt="image" />
