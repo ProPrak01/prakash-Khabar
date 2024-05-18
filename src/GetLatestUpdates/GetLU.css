@@ -1,0 +1,56 @@
+.opacity0{
+    opacity: 0;
+}
+.getLU-container{
+        margin-top: 1.7vh;
+        height: 53vh;
+        width: 100%;
+        background-color:rgb(205, 205, 205);
+        display: flex;
+        flex-flow: column;
+}
+.getLU-heading{
+    text-align: center;
+    width: 100%;
+    height: 33%;
+    /* background-color: blue; */
+    align-content: center;
+    font-size: 6vh;
+    color: rgb(95, 95, 95);
+}
+.getLU-buttons{
+   
+    width: 100%;
+    height: 67%;
+    /* background-color: rgb(188, 188, 255); */
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4vh;
+    font-size: 3vh;
+}
+.getLU-email{
+    background-color: azure;
+    width: 70%;
+   padding: 3vh;
+   text-align: center;
+   color: rgb(76, 76, 76);
+   border: 0.4vh solid rgba(0, 0, 0, 0);
+   transition: 0.4s;
+cursor:pointer;
+}
+.getLU-Subscribe{
+    background-color: rgb(249, 61, 61);
+    width: 70%;
+    padding: 3vh;
+   text-align: center;
+   color: white;
+   border: 0.4vh solid rgba(0, 0, 0, 0);
+   transition: 0.4s;
+   cursor:pointer;
+}
+.glubtn:hover{
+    border: 0.4vh solid rgb(0, 0, 0);
+
+}

@@ -1,0 +1,52 @@
+.new-dms-left{
+    height: 100%;
+    width: 100%;
+}
+.new-dms-left img{
+    height: 60%;
+    width: 100%;
+    opacity: 1;
+    margin-top: 4vh;
+}
+.font3vh{
+    font-size: 2vh;
+}
+.font5vh{
+    font-size: 4vh;
+}
+.Circle{
+    height: 10vh;
+    width: 10vh;
+    border: 0.4vh solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.relative{
+    position: relative;
+}
+.playbutton{
+ 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+    color: white;
+    cursor: pointer;
+}
+.playbutton span{
+    scale: 3;
+
+}
+
+.playbutton:hover {
+    opacity: 0.3;
+}
+.playbutton:hover .Circle{
+    opacity: 0.3;
+}

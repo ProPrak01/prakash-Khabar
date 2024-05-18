@@ -1,0 +1,109 @@
+.Entertainment-container{
+    height: 90vh;
+    /* background-color: aqua; */
+    padding-top: 3vh;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 5vh;
+}
+.leftRight{
+display: flex;
+gap: 2vh;
+margin-right: 2vh;
+}
+.leftBox{
+    height: 5vh;
+    width: 5vh;
+    background-color: rgb(249, 124, 124);
+    align-content: center;
+    /* border: 0.2vh solid; */
+    transition: 0.4s;
+    cursor: pointer;
+    color: rgb(239, 239, 239);
+
+}
+.leftBox span{
+    margin-left: 50%;
+    transform: translate(-40%,0);
+}
+.rightBox{
+    height: 5vh;
+    width: 5vh;
+    background-color: rgb(249, 124, 124);
+    align-content: center;
+    /* border: 0.2vh solid; */
+transition: 0.4s;
+cursor: pointer;
+color: rgb(239, 239, 239);
+}
+.rightBox span{
+    margin-left: 50%;
+    transform: translate(-40%,0);
+}
+.rightBox:hover {
+    background-color: rgb(255, 76, 76);
+    border-radius: 16px;
+
+}
+.leftBox:hover {
+    background-color: rgb(255, 76, 76);
+    border-radius: 16px;
+
+}
+.Entertainment-image {
+    background-color: rgb(0, 0, 0);
+    height: 57vh;
+    margin-top: 3vh;
+    position: relative;
+    width: 100%;
+}
+.Entertainment-image img{
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+}
+.Entertainment-image img:hover{
+    opacity: 0.1;
+}
+.ent-text-small{
+    position: absolute;
+    bottom: 18vh;
+    color: white;
+    left: 2vh;
+    font-size: 250%;
+    transition: 1s;
+}
+.ent-text-large{
+    position: absolute;
+    bottom: 8vh;
+    color: rgb(178, 178, 178);
+    left: 2vh;
+    font-size: 150%;
+    max-width: 70vh;
+    border-top: 0.5vh  solid red;
+    padding-top: 2vh;
+    transition: 1s;
+
+}
+
+.Entertainment-image:hover .ent-text-large{
+    font-size: 250%;
+    max-width: 90%;
+
+}
+.Entertainment-image:hover .ent-text-small{
+    bottom: 24vh;
+    font-size: 300%;
+    
+   
+}
+.ent-card-container{
+    margin-top: 4vh;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.mxw45{
+    max-width: 45vh;
+}

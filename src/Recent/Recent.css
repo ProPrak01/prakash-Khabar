@@ -1,0 +1,25 @@
+.Recent-container{
+    height: 65vh;
+    /* background-color: rgb(239, 208, 208); */
+
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 8vh;
+
+    /* border: 1px solid black; */
+    display: flex;
+    flex-flow: column;
+    gap: 0.3vh;
+    /* padding-top:3vh ; */
+  margin-left: 5vh;
+}
+.fontsize1o6vh{
+    font-size: 2vh;
+    margin-left: 2vh;
+}
+.justifyAround{
+    justify-content: space-around;
+}
+.mb2vh{
+    margin-bottom: 2vh;
+}

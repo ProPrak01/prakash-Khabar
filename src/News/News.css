@@ -1,0 +1,99 @@
+.News-container{
+    padding-top: 3vh;
+display: flex;
+    height: 63vh;
+    width: 85%;
+    margin: 0 auto;
+
+}
+.left{
+    height: 100%;
+    width: 60%;
+    opacity: 1;
+    background-color: black;
+    position: relative;
+}
+.left img{
+    height: 100%;
+    opacity: 0.3;
+    width: 100%;
+}
+
+.topLeft img{
+    height: 100%;
+    opacity: 0.3;
+    width: 100%;
+}
+.topRight img{
+    height: 100%;
+    opacity: 0.3;
+    width: 100%;
+}
+.bottom img{
+    height: 100%;
+    opacity: 0.3;
+    width: 100%;
+}
+img{
+    transition: 1s;
+
+}
+img:hover{
+    opacity: 1;
+}
+.text-small{
+position: absolute;
+bottom: 9vh;
+color: white;
+left: 2vh;
+font-size: 100%;
+}
+.text-large{
+    position: absolute;
+    bottom: 1vh;
+    color: white;
+    left: 2vh;
+    font-size: 300%;
+    }
+.right{
+    height: 100%;
+    /* background-color: rgb(205, 255, 196); */
+    width: 40%;
+    padding-left: 3vh;
+
+}
+.font-3vh{
+font-size: 3vh;
+}
+.bottom-13vh{
+    bottom: 14vh;
+}
+.bottom-6vh{
+    bottom: 6vh;
+}
+.top{
+    height: 60%;
+/* background-color: darkred; */
+display: flex;
+justify-content: space-between;
+}
+.topLeft{
+    height:  100%;
+    background-color: rgb(0, 0, 0);
+    width: 47.5%;
+    position: relative;
+
+}
+.topRight{
+    height:  100%;
+    background-color: rgb(0, 0, 0);
+    width: 47.5%;
+    position: relative;
+
+}
+.bottom{
+    margin-top: 4%;
+    height: 35%;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+}

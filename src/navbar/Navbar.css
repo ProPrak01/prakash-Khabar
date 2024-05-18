@@ -1,0 +1,36 @@
+.Navbar-container{
+    height: 5vh;
+    width: 100%;
+    background-color: rgb(255, 213, 165);
+    box-shadow: 1px 5px rgb(253, 225, 192);
+    display: flex;
+    justify-content: space-around;
+}
+.navdata{
+    display: flex;
+    align-items: center;
+    gap: 2vh;
+}
+.socialmedia{
+    display: flex;
+    gap: 1vh;
+align-items: center;
+}
+.BreakingNewsTag{
+    background-color: rgb(247, 90, 90);
+    height: 100%;
+    align-content: center;
+    padding: 0 1vh;
+    color: white;
+    transition: 1s;
+   
+}
+.BreakingNewsTag:hover{
+    background-color: rgb(196, 15, 15);
+  
+}
+
+.date{
+    display: flex;
+    align-items: center;
+}

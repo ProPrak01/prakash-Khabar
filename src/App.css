@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.DMR{
+    margin: 0 auto;
+
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+.Container{
+    background-color: rgb(250, 241, 231);
+}
