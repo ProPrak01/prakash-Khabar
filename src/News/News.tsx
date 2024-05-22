@@ -1,6 +1,6 @@
 import './News.css'
 
-const News = ({newsContent}) => {
+const News = ({newsContent}: {newsContent: Array<any>}) => {
   const Article1 = newsContent[0];
   const Article2 = newsContent[1];
   const Article3 = newsContent[2];

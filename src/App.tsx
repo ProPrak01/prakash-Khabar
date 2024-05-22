@@ -17,7 +17,7 @@ import Holding from './InstagramFollowUs/Holding'
 function App() {
   const [articles, setArticles] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [error, setError] = useState<Error | null>(null);
   const [CurrentCountry, SetCurrentCountry] = useState("in");
   const [category, setCategory] = useState("")
 
@@ -39,7 +39,8 @@ function App() {
        // console.log(response.data.articles)
         setLoading(false);
       } catch (err) {
-        setError(err);
+        
+        setError(err as any);
         setLoading(false);
       }
     };
@@ -61,13 +62,13 @@ function App() {
   );
   if (error) return(
     <div className='error bebas-neue-regular'>
-      <h1 className='error-heading'> {error.message} </h1>
+      <h1 className='error-heading'> {(error as Error).message} </h1>
      
      <div className="loader2"></div>
      {/* <h4 className='creator'>Author :   Prakash</h4> */}
     </div>
    
-);
+  );
   // console.log(articles)
   return (
     <div className='Container bebas-neue-regular'>

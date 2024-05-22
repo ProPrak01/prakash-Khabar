@@ -1,7 +1,7 @@
 import "./Header.css";
 import React, { useState } from 'react';
 import mainLogo from "../assets/pkhabar-logo.png"
-import axios from 'axios';
+
 
 const Header = ({setCategory, SetCurrentCountry}: {setCategory: any, SetCurrentCountry: any}) => {
   const [selectedSection, setSelectedSection] = useState("General");

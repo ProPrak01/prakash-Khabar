@@ -1,4 +1,4 @@
-import {useState,useEffect} from 'react';
+import {useState,useEffect, SetStateAction} from 'react';
 import facebook from "../assets/facebook.png";
 import twitter from "../assets/twitter.png";
 import youtube from "../assets/youtube_3670147.png";
@@ -6,13 +6,32 @@ import youtube from "../assets/youtube_3670147.png";
 import "./Navbar.css";
 import axios from 'axios';
 
-const Navbar = ({breakingNews}) => {
-  const [weatherData , setWeatherData] = useState({});
-  const [mylocation, setLocation] = useState(null);
+const Navbar = ({breakingNews}: any) => {
+
+
+  
+  const [weatherData, setWeatherData] = useState<WeatherData>({});
+    const [mylocation, setLocation] = useState(null);
   const [error, setError] = useState(null);
 
+
+  interface WeatherData {
+    current?: {
+      temp_c: number;
+      condition: {
+        text: string;
+        icon: string;
+      };
+    };
+    location?: {
+      name: string;
+    };
+  }
+
+  
+
   useEffect(() => {
-    const fetchLocation = async (latitude, longitude) => {
+    const fetchLocation = async (latitude: number, longitude: number) => {
       try {
         const response = await axios.get('https://api.opencagedata.com/geocode/v1/json', {
           params: {
@@ -39,7 +58,7 @@ const Navbar = ({breakingNews}) => {
       
         fetchweather();
       } catch (err) {
-        setError(err);
+        setError(err as SetStateAction<null>);
       }
     };
 
@@ -50,9 +69,7 @@ const Navbar = ({breakingNews}) => {
           fetchLocation(latitude, longitude);
            
         },
-        (err) => {
-          setError(err);
-        }
+        (err) => setError(null)
       );
 
 
@@ -60,7 +77,7 @@ const Navbar = ({breakingNews}) => {
 
 
     } else {
-      setError(new Error('Geolocation is not supported by this browser.'));
+      setError(null);
     }
   }, []);
 
@@ -83,6 +100,8 @@ const Navbar = ({breakingNews}) => {
 
 
 const { current } = weatherData;
+
+
 var today = new Date()
 const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 const currentDay = daysOfWeek[today.getDay()];
