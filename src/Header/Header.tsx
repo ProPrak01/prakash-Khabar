@@ -1,8 +1,27 @@
 import "./Header.css";
-
+import React, { useState } from 'react';
 import mainLogo from "../assets/pkhabar-logo.png"
+import axios from 'axios';
 
-const Header = () => {
+const Header = ({setCategory, SetCurrentCountry}: {setCategory: any, SetCurrentCountry: any}) => {
+  const [selectedSection, setSelectedSection] = useState("General");
+  const handleSectionClick = (section: React.SetStateAction<string>) => {
+    if(section != "International"){
+      setSelectedSection(section);
+      SetCurrentCountry("in")
+
+    }
+    else{
+      SetCurrentCountry("us")
+      setSelectedSection(section);
+
+    }
+
+
+  };
+  if(selectedSection != "International"){
+    setCategory(selectedSection);
+  }
   return (
     <div className="Header-container">
       <div className="brandings">
@@ -22,15 +41,15 @@ const Header = () => {
 
       <div className="nav2">
         <div className="sections">
-        <div className="Home">Home</div>
-        <div className="International">International</div>
-        <div className="Sports">Sports</div>
-        <div className="Opinion">Opinion</div>
-        <div className="Buissness">Buissness</div>
-        <div className="youth">youth</div>
-        <div className="Entertainment">Entertainment</div>
-        <div className="Lifestyle">Lifestyle</div>
-        <div className="Pages">
+        <div onClick={() => handleSectionClick("General")} className={`nav-item ${selectedSection == "General" ? 'active' : ''}`}>Home</div>
+        <div onClick={() => handleSectionClick("International")} className={`nav-item ${selectedSection == "International" ? 'active' : ''}`}>International</div>
+        <div onClick={() => handleSectionClick("Sports")} className={`nav-item ${selectedSection == "Sports" ? 'active' : ''}`}>Sports</div>
+        <div onClick={() => handleSectionClick("science")} className={`nav-item ${selectedSection == "science" ? 'active' : ''}`}>science</div>
+        <div onClick={() => handleSectionClick("business")} className={`nav-item ${selectedSection == "business" ? 'active' : ''}`}>business</div>
+        <div onClick={() => handleSectionClick("health")} className={`nav-item ${selectedSection == "health" ? 'active' : ''}`}>health</div>
+        <div onClick={() => handleSectionClick("entertainment")} className={`nav-item ${selectedSection == "entertainment" ? 'active' : ''}`}>Entertainment</div>
+        <div onClick={() => handleSectionClick("technology")} className={`nav-item ${selectedSection == "technology" ? 'active' : ''}`}>technology</div>
+        <div onClick={() => handleSectionClick("Pages")} className={`Pages-default nav-item ${selectedSection == "Pages" ? 'active' : ''}`}>
           <div className="pages-text">
           Pages
           </div>

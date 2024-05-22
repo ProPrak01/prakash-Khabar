@@ -43,7 +43,7 @@ img:hover{
 }
 .text-small{
 position: absolute;
-bottom: 9vh;
+top: 2vh;
 color: white;
 left: 2vh;
 font-size: 100%;

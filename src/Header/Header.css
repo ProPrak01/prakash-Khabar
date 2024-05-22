@@ -34,9 +34,10 @@ gap: 3vh;
     display: flex;
     justify-content:space-between;
     color: rgb(217, 217, 217);
-
+    font-size: 2vh;
+    /* padding-left: 1vh; */
 }
-.Home{
+/* .Home{
     height: 8vh;
     align-content: center;
     background-color: rgb(255, 93, 93);
@@ -49,12 +50,44 @@ gap: 3vh;
 .Home:hover{
     text-decoration: none;
     background-color: rgb(248, 25, 25);
+    color: rgb(246, 246, 246);
+} */
+.nav-item {
+    /* padding: 10px 20px; */
+    height: 8vh;
+   
+    padding: 0 4vh;
+    align-content: center;
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.7vh;
+    transition: color 0.1s ease;
+    border: 2px solid rgba(0, 0, 0, 0);
+  }
+  
+  .nav-item:hover {
+    color: lightgray;
+    border: 2px solid rgba(0, 0, 0, 0.972);
 
-}
+  }
+  
+  .nav-item.active {
+    height: 8vh;
+    align-content: center;
+    background-color: rgb(255, 93, 93);
+    padding: 0 5vh;  
+      width: fit-content;
+    text-decoration: underline;
+    transition: 0.4s;
+    border: 2px solid rgba(0, 0, 0, 0.972);
+
+  }
 .sections{
     /* margin-left: 3.5vh; */
     display: flex;
-    gap: 7vh;
+    /* gap: 4vh; */
     align-items: center;
 }
 .search{
@@ -65,8 +98,10 @@ gap: 3vh;
     align-items: center;
     color: rgb(160, 160, 160);
 }
-
-.Pages{
+.search span{
+    cursor: pointer;
+}
+.Pages-default{
     display: flex;
     justify-content: center;
     align-items: center;
