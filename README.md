@@ -1,4 +1,4 @@
-# Prakash Khabar
+# Prakash Khabar (Under Dev.)
 Prakash Khabar - Your Personalized News Application
 ## (Frontend practice project)
 ## (no youtube copy)
