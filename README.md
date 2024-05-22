@@ -1,6 +1,7 @@
 # Prakash Khabar
 Prakash Khabar - Your Personalized News Application
-(Frontend practice project)
+## (Frontend practice project)
+## (no youtube copy)
 Prakash Khabar is a personalized news application developed using Vite and React. It offers users a tailored news browsing experience, integrating various APIs such as weather, location, and NewsAPI to provide up-to-date information.
 Features
 
