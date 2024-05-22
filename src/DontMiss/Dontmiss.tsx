@@ -1,5 +1,5 @@
 import "./Dontmiss.css";
-const Dontmiss = ({allNews, setCategory}: {allNews: any[], setCategory: (category: string) => void}) => {
+const Dontmiss = ({allNews}: {allNews: any[], setCategory: (category: string) => void}) => {
   console.log(allNews);
   const Article1 = allNews[4];
   const Article2 = allNews[5];
