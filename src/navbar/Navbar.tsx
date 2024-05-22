@@ -12,7 +12,7 @@ const Navbar = ({breakingNews}: any) => {
   
   const [weatherData, setWeatherData] = useState<WeatherData>({});
     const [mylocation, setLocation] = useState(null);
-  const [error, setError] = useState(null);
+  const [_error, setError] = useState(null);
 
 
   interface WeatherData {
@@ -69,7 +69,7 @@ const Navbar = ({breakingNews}: any) => {
           fetchLocation(latitude, longitude);
            
         },
-        (err) => setError(null)
+        (_err) => setError(null)
       );
 
 
