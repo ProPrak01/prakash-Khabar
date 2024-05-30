@@ -1,6 +1,6 @@
-import { useState } from "react";
+// import { useState } from "react";
 import "./Dontmiss.css";
-const Dontmiss = ({allNews,setCategory }: {setCategory: any, allNews: any}) => {
+const Dontmiss = ({allNews }: { allNews: any}) => {
   console.log(allNews);
   const Article1 = allNews[4];
   const Article2 = allNews[5];
@@ -8,7 +8,7 @@ const Dontmiss = ({allNews,setCategory }: {setCategory: any, allNews: any}) => {
   const Article4 = allNews[7];
   const Article5 = allNews[8];
   const Article6 = allNews[9];
-  const [selectedSection, setSelectedSection] = useState("General");
+  // const [selectedSection, setSelectedSection] = useState("General");
   // const handleSectionClick = (section: React.SetStateAction<string>) => {
       
   //     setSelectedSection(section);

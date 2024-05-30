@@ -113,7 +113,7 @@ function App() {
       <News newsContent={articles}/>
       
       <div className="DMR">
-      <Dontmiss  allNews={articles} setCategory={setCategory}/>
+      <Dontmiss  allNews={articles}/>
       <Recent/>
       </div>
       
