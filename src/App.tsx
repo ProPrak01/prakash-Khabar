@@ -34,6 +34,8 @@ function App() {
             country: `${CurrentCountry}`,
             
             apiKey: '6d8c8ffb87294c559b23c02b3afd5052'
+          },headers:{
+            'Upgrade-Insecure-Requests': '1'
           }
         });
         const responseSports = await axios.get('https://newsapi.org/v2/top-headlines', {
@@ -42,6 +44,8 @@ function App() {
             country: `${CurrentCountry}`,
             
             apiKey: '6d8c8ffb87294c559b23c02b3afd5052'
+          },headers:{
+            'Upgrade-Insecure-Requests': '1'
           }
         });
         const responseScience = await axios.get('https://newsapi.org/v2/top-headlines', {
@@ -50,6 +54,8 @@ function App() {
             country: `${CurrentCountry}`,
             
             apiKey: '6d8c8ffb87294c559b23c02b3afd5052'
+          },headers:{
+            'Upgrade-Insecure-Requests': '1'
           }
         });
         const responseBusiness = await axios.get('https://newsapi.org/v2/top-headlines', {
@@ -58,6 +64,8 @@ function App() {
             country: `${CurrentCountry}`,
             
             apiKey: '6d8c8ffb87294c559b23c02b3afd5052'
+          },headers:{
+            'Upgrade-Insecure-Requests': '1'
           }
         });
         setArticles(response.data.articles);
