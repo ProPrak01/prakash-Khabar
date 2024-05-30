@@ -75,14 +75,14 @@ arrow_forward_ios
           <div className="dms-card mxw45">
             <div className="dmsr-card-main">
             <div className="dms-card-img">
-              <img src={Article3.urlToImage}  alt="dmsr-img" />
+              <img src={Article4.urlToImage}  alt="dmsr-img" />
             </div>
             <div className="dms-card-contnet">
               <div className="dms-card-subheading">
-              {Article3.author}  <span className="lightText">- 27 Dec 2020</span>
+              {Article4.author}  <span className="lightText">- 27 Dec 2020</span>
               </div>
               <div className="dms-card-heading fontsize2vh">
-              {Article3.title} 
+              {Article4.title} 
               </div>
             </div>
             </div>

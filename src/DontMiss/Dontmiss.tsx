@@ -9,15 +9,15 @@ const Dontmiss = ({allNews,setCategory }: {setCategory: any, allNews: any}) => {
   const Article5 = allNews[8];
   const Article6 = allNews[9];
   const [selectedSection, setSelectedSection] = useState("General");
-  const handleSectionClick = (section: React.SetStateAction<string>) => {
+  // const handleSectionClick = (section: React.SetStateAction<string>) => {
       
-      setSelectedSection(section);
+  //     setSelectedSection(section);
      
-      setCategory(selectedSection);
+  //     setCategory(selectedSection);
  
 
 
-  };
+  // };
   
   return (
     <div className="DontMiss-container">

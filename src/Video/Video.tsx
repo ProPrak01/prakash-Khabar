@@ -1,5 +1,4 @@
 import './Video.css'
-import videoasset from '../assets/Videoass.png'
 
 const Video = () => {
   return (
