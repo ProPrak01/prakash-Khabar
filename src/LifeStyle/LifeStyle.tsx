@@ -1,11 +1,13 @@
 import './LifeStyle.css'
-import limage from '../assets/lifestyleImg.png'
-import limage2 from '../assets/limg2.png'
-const LifeStyle = () => {
+
+const LifeStyle = ({content}: {content: Array<any>}) => {
+  const Article1 = content[0];
+  const Article2 = content[1];
+
   return (
     <div className="DontMiss-container">
       <div className="dms-navbar">
-        <div className="dms-heading red">Life Style</div>
+        <div className="dms-heading red">Science</div>
         <div className="dms-buttons" >
           <div className="dms-all btn redbg">All</div>
           <div className="dms-Lifestyle btn purplebg">Travel</div>
@@ -18,38 +20,31 @@ const LifeStyle = () => {
       <div style={{gap:"11vh"}} className="dms-content">
         <div className="dms-left">
           <img
-            src={limage}
+            src={Article1.urlToImage}
             alt="dmsl"
           />
           <div className="dmsl-head">
-            Craig Bator <span className="lightText">- 27 Dec 2020</span>{" "}
+          {Article1.author}<span className="lightText">- 27 Dec 2020</span>{" "}
           </div>
           <div className="dmsl-MainHead">
-          ‘Institutional delivery vital for reducing maternal and neonatal deaths’        </div>
+          {Article1.title}       </div>
           <div className="dmsl-para lightText">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem
-            perferendis temporibus doloribus exercitationem illo similique
-            voluptatem voluptatibus voluptatum sequi, corrupti tempore ipsum,
-            perspiciatis quo dignissimos? Quam excepturi id quod assumenda saepe
-            voluptatibus!
+          {Article1.description} 
           </div>
         </div>
         <div className="dms-left">
           <img
-            src={limage2}
+            src={Article2.urlToImage}
             alt="dmsl"
+          
           />
           <div className="dmsl-head">
-            Craig Bator <span className="lightText">- 27 Dec 2020</span>{" "}
+          {Article2.author} <span className="lightText">- 27 Dec 2020</span>{" "}
           </div>
           <div className="dmsl-MainHead">
-          Being self-controlled child may lead to healthier middle-age         </div>
+          {Article2.title}         </div>
           <div className="dmsl-para lightText">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem
-            perferendis temporibus doloribus exercitationem illo similique
-            voluptatem voluptatibus voluptatum sequi, corrupti tempore ipsum,
-            perspiciatis quo dignissimos? Quam excepturi id quod assumenda saepe
-            voluptatibus!
+          {Article2.description}
           </div>
         </div>
         

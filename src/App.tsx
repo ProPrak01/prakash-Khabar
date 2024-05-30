@@ -20,7 +20,8 @@ function App() {
   const [error, setError] = useState<Error | null>(null);
   const [CurrentCountry, SetCurrentCountry] = useState("in");
   const [category, setCategory] = useState("")
-
+  const [Sportsarticles, setSportsArticles] = useState([]);
+  const [Sciencesarticles, setSciencesArticles] = useState([]);
 
   useEffect(() => {
     const fetchNews = async () => {
@@ -34,8 +35,29 @@ function App() {
             apiKey: '6d8c8ffb87294c559b23c02b3afd5052'
           }
         });
+        const responseSports = await axios.get('https://newsapi.org/v2/top-headlines', {
+          params: {
+            category:`Sports`,
+            country: `${CurrentCountry}`,
+            
+            apiKey: '6d8c8ffb87294c559b23c02b3afd5052'
+          }
+        });
+        const responseScience = await axios.get('https://newsapi.org/v2/top-headlines', {
+          params: {
+            category:`Science`,
+            country: `${CurrentCountry}`,
+            
+            apiKey: '6d8c8ffb87294c559b23c02b3afd5052'
+          }
+        });
         setArticles(response.data.articles);
-        
+        setSportsArticles(responseSports.data.articles);
+        setSciencesArticles(responseScience.data.articles);
+
+
+
+
        // console.log(response.data.articles)
         setLoading(false);
       } catch (err) {
@@ -86,12 +108,15 @@ function App() {
       </div>
       
       <Entertainment/>
+      
       <div className="DMR">
-      <Sports/>
+
+      <Sports content={Sportsarticles}/>
       <Stayconnected/>
+
       </div>
       <div className="DMR">
-      <LifeStyle/>
+      <LifeStyle  content={Sciencesarticles}/>
       <GetLU/>
       </div>
       <div className="DMR">

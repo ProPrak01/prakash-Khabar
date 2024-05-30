@@ -1,5 +1,6 @@
+import { useState } from "react";
 import "./Dontmiss.css";
-const Dontmiss = ({allNews}: {allNews: any[], setCategory: (category: string) => void}) => {
+const Dontmiss = ({allNews,setCategory }: {setCategory: any, allNews: any}) => {
   console.log(allNews);
   const Article1 = allNews[4];
   const Article2 = allNews[5];
@@ -7,7 +8,16 @@ const Dontmiss = ({allNews}: {allNews: any[], setCategory: (category: string) =>
   const Article4 = allNews[7];
   const Article5 = allNews[8];
   const Article6 = allNews[9];
+  const [selectedSection, setSelectedSection] = useState("General");
+  const handleSectionClick = (section: React.SetStateAction<string>) => {
+      
+      setSelectedSection(section);
+     
+      setCategory(selectedSection);
+ 
 
+
+  };
   
   return (
     <div className="DontMiss-container">
@@ -21,10 +31,7 @@ const Dontmiss = ({allNews}: {allNews: any[], setCategory: (category: string) =>
           <div className="dms-Travel btn goldbg">Travel</div>
           <div className="dms-Gadget btn lightbluebg">Gadget</div>
           <div className="dms-World btn bluebg">World</div>
-          <div className="dms-More btn darkbluebg">
-            <div className="more-text">More</div>
-            <span className="material-symbols-outlined">arrow_drop_down</span>
-          </div>
+          
         </div>
       </div>
       <div className="dms-content">
@@ -34,10 +41,10 @@ const Dontmiss = ({allNews}: {allNews: any[], setCategory: (category: string) =>
             alt="dmsl"
           />
           <div className="dmsl-head">
-            Craig Bator <span className="lightText">- 27 Dec 2020</span>{" "}
+          {Article1.author}<span className="lightText">     {Article1.publishedAt}</span>{" "}
           </div>
           <div className="dmsl-MainHead">
-            Now Is the Time to Think About Your Small Business Success
+          {Article1.title}
           </div>
           <div className="dmsl-para lightText">
           {Article1.description}
@@ -51,11 +58,10 @@ const Dontmiss = ({allNews}: {allNews: any[], setCategory: (category: string) =>
             </div>
             <div className="dms-card-contnet">
               <div className="dms-card-subheading">
-              Craig Bator <span className="lightText">- 27 Dec 2020</span>
+              {Article1.author} <span className="lightText">{" "}{Article2.publishedAt}</span>
               </div>
               <div className="dms-card-heading fontsize2vh">
-              Penn's Expanding Political Climate Gears Up Fo
-2020 Election
+              {Article2.title}
               </div>
             </div>
             </div>
@@ -71,11 +77,10 @@ const Dontmiss = ({allNews}: {allNews: any[], setCategory: (category: string) =>
             </div>
             <div className="dms-card-contnet">
               <div className="dms-card-subheading">
-              Craig Bator <span className="lightText">- 27 Dec 2020</span>
+              {Article3.author}  <span className="lightText">{" "}{Article3.publishedAt}</span>
               </div>
               <div className="dms-card-heading fontsize2vh">
-              Penn's Expanding Political Climate Gears Up Fo
-2020 Election
+              {Article3.title} 
               </div>
             </div>
             </div>
@@ -91,11 +96,10 @@ const Dontmiss = ({allNews}: {allNews: any[], setCategory: (category: string) =>
             </div>
             <div className="dms-card-contnet">
               <div className="dms-card-subheading">
-              Craig Bator <span className="lightText">- 27 Dec 2020</span>
+              {Article4.author} <span className="lightText">{" "}{Article4.publishedAt}</span>
               </div>
               <div className="dms-card-heading fontsize2vh">
-              Penn's Expanding Political Climate Gears Up Fo
-2020 Election
+              {Article4.title} 
               </div>
             </div>
             </div>
@@ -111,11 +115,10 @@ const Dontmiss = ({allNews}: {allNews: any[], setCategory: (category: string) =>
             </div>
             <div className="dms-card-contnet">
               <div className="dms-card-subheading">
-              Craig Bator <span className="lightText">- 27 Dec 2020</span>
+              {Article5.author} <span className="lightText">{" "}{Article5.publishedAt}</span>
               </div>
               <div className="dms-card-heading fontsize2vh">
-              Penn's Expanding Political Climate Gears Up Fo
-2020 Election
+              {Article5.title} 
               </div>
             </div>
             </div>
@@ -131,11 +134,10 @@ const Dontmiss = ({allNews}: {allNews: any[], setCategory: (category: string) =>
             </div>
             <div className="dms-card-contnet">
               <div className="dms-card-subheading">
-              Craig Bator <span className="lightText">- 27 Dec 2020</span>
+              {Article6.author}<span className="lightText">{" "}{Article6.publishedAt}</span>
               </div>
               <div className="dms-card-heading fontsize2vh">
-              Penn's Expanding Political Climate Gears Up Fo
-2020 Election
+              {Article6.title}
               </div>
             </div>
             </div>

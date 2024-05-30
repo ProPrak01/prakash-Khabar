@@ -18,7 +18,7 @@ const Video = () => {
       <div  className="dms-content">
       <div  className="Entertainment-image relative">
 
-        <div className="playbutton">
+        {/* <div className="playbutton">
         <span className="material-symbols-outlined">
 play_arrow
 </span>
@@ -29,7 +29,10 @@ play_arrow
         <img src={videoasset} alt="image" />
       <div className="text-small   font3vh">Craig Bator <span className="lightText">- 27 Dec 2020</span></div>
       <div className="text-large   font5vh">Play This Game for Free on Epic Store
-This Weekend</div>
+This Weekend</div> */}
+  <iframe width="100%" height="100%"
+src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+</iframe> 
       </div>
  
         

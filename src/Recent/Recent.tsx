@@ -4,8 +4,7 @@ const Recent = () => {
     <div className='Recent-container'>
        <div className="dms-navbar justifyAround mb2vh">
         <div className="dms-heading red fontsize1o6vh">Recent</div>
-        <div className="  fontsize1o6vh">Trending</div>
-        <div className="  fontsize1o6vh">MostViewd</div>
+       
 
       </div>
 

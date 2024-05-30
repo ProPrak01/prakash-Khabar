@@ -47,7 +47,6 @@ const Header = ({setCategory, SetCurrentCountry}: {setCategory: any, SetCurrentC
         <div onClick={() => handleSectionClick("science")} className={`nav-item ${selectedSection == "science" ? 'active' : ''}`}>science</div>
         <div onClick={() => handleSectionClick("business")} className={`nav-item ${selectedSection == "business" ? 'active' : ''}`}>business</div>
         <div onClick={() => handleSectionClick("health")} className={`nav-item ${selectedSection == "health" ? 'active' : ''}`}>health</div>
-        <div onClick={() => handleSectionClick("entertainment")} className={`nav-item ${selectedSection == "entertainment" ? 'active' : ''}`}>Entertainment</div>
         <div onClick={() => handleSectionClick("technology")} className={`nav-item ${selectedSection == "technology" ? 'active' : ''}`}>technology</div>
         <div onClick={() => handleSectionClick("Pages")} className={`Pages-default nav-item ${selectedSection == "Pages" ? 'active' : ''}`}>
           <div className="pages-text">
