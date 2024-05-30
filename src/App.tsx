@@ -22,6 +22,7 @@ function App() {
   const [category, setCategory] = useState("")
   const [Sportsarticles, setSportsArticles] = useState([]);
   const [Sciencesarticles, setSciencesArticles] = useState([]);
+  const [Businessarticles, setBusinessArticles] = useState([]);
 
   useEffect(() => {
     const fetchNews = async () => {
@@ -51,9 +52,18 @@ function App() {
             apiKey: '6d8c8ffb87294c559b23c02b3afd5052'
           }
         });
+        const responseBusiness = await axios.get('https://newsapi.org/v2/top-headlines', {
+          params: {
+            category:`Business`,
+            country: `${CurrentCountry}`,
+            
+            apiKey: '6d8c8ffb87294c559b23c02b3afd5052'
+          }
+        });
         setArticles(response.data.articles);
         setSportsArticles(responseSports.data.articles);
         setSciencesArticles(responseScience.data.articles);
+        setBusinessArticles(responseBusiness.data.articles);
 
 
 
@@ -107,7 +117,7 @@ function App() {
       <Recent/>
       </div>
       
-      <Entertainment/>
+      <Entertainment content={Businessarticles}/>
       
       <div className="DMR">
 
