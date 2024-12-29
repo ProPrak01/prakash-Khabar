@@ -38,7 +38,7 @@ const Header = ({setCategory, SetCurrentCountry}: {setCategory: any, SetCurrentC
         {/* <img src={billboard} alt="" height={100} /> */}
         </div>
       </div>
-
+              
       <div className="nav2">
         <div className="sections">
         <div onClick={() => handleSectionClick("General")} className={`nav-item ${selectedSection == "General" ? 'active' : ''}`}>Home</div>

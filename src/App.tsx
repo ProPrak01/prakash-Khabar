@@ -107,7 +107,7 @@ function App() {
       <Navbar breakingNews={articles[0]}/>
       <Header 
       setCategory={setCategory}
-      
+        
       SetCurrentCountry={SetCurrentCountry}
       />
       <News newsContent={articles}/>

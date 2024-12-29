@@ -1,0 +1,211 @@
+{
+    "version": "5.2",
+    "groups": [
+        {
+            "id": 2,
+            "title": "Group 2",
+            "iconColor": "hsla(110, 100%, 50%, 1)",
+            "iconUrl": null,
+            "iconViewType": "main-squares",
+            "tabs": [
+                {
+                    "url": "https://www.youtube.com/watch?v=vGxR98gI930",
+                    "title": "These coding projects give you an unfair advantage - YouTube",
+                    "id": 11
+                },
+                {
+                    "url": "https://www.youtube.com/watch?v=V1hjSeSF4xg",
+                    "title": "(72) 5 Coding Projects That Give You An UNFAIR Advantage - YouTube",
+                    "id": 12
+                },
+                {
+                    "url": "https://www.youtube.com/watch?v=jTJvyKZDFsY",
+                    "title": "(57) 20 Programming Projects That Will Make You A God At Coding - YouTube",
+                    "id": 13
+                },
+                {
+                    "url": "https://www.youtube.com/watch?v=Mfa9ah4Rvlo",
+                    "title": "(70) Next js 15 is Here… New Changes Again?! - YouTube",
+                    "id": 14
+                },
+                {
+                    "url": "https://www.youtube.com/watch?v=8XVI_Zrvz3c",
+                    "title": "(60) These Coding Projects Will Set You Apart as a Programmer (w/ Instructions Included) - YouTube",
+                    "id": 15
+                },
+                {
+                    "url": "https://www.youtube.com/watch?v=LGNiWRhuIoA&list=PLp_L1ltSVItxcbJbKRyCd4KWZ4kHfDJ9U",
+                    "title": "(76) A.I. Learns to Play Tetris - YouTube",
+                    "id": 16
+                },
+                {
+                    "url": "https://app.codecrafters.io/catalog",
+                    "title": "Catalog | CodeCrafters",
+                    "id": 17
+                },
+                {
+                    "url": "https://docs.expo.dev/get-started/create-a-project/",
+                    "title": "Create a project - Expo Documentation",
+                    "id": 18
+                }
+            ],
+            "isArchive": false,
+            "discardTabsAfterHide": false,
+            "discardExcludeAudioTabs": false,
+            "prependTitleToWindow": false,
+            "exportToBookmarksWhenAutoBackup": true,
+            "leaveBookmarksOfClosedTabs": false,
+            "newTabContainer": "firefox-default",
+            "ifDifferentContainerReOpen": false,
+            "excludeContainersForReOpen": [],
+            "isSticky": false,
+            "catchTabContainers": [],
+            "catchTabRules": "",
+            "moveToGroupIfNoneCatchTabRules": null,
+            "muteTabsWhenGroupCloseAndRestoreWhenOpen": false,
+            "showTabAfterMovingItIntoThisGroup": false,
+            "showOnlyActiveTabAfterMovingItIntoThisGroup": false,
+            "showNotificationAfterMovingTabIntoThisGroup": true,
+            "bookmarkId": null
+        },
+        {
+            "id": 3,
+            "title": "cxx",
+            "iconColor": "hsla(160, 100%, 50%, 1)",
+            "iconUrl": null,
+            "iconViewType": "main-squares",
+            "tabs": [
+                {
+                    "url": "https://docs.rs/cxx/latest/cxx/",
+                    "title": "cxx - Rust",
+                    "id": 19
+                },
+                {
+                    "url": "https://cxx.rs/tutorial.html",
+                    "title": "Tutorial — Rust ♡ C++",
+                    "id": 20
+                },
+                {
+                    "url": "https://cxx.rs/extern-c++.html",
+                    "title": "extern \"C++\" — Rust ♡ C++",
+                    "id": 21
+                },
+                {
+                    "url": "https://doc.rust-lang.org/cargo/reference/build-scripts.html",
+                    "title": "Build Scripts - The Cargo Book",
+                    "id": 22
+                }
+            ],
+            "isArchive": false,
+            "discardTabsAfterHide": false,
+            "discardExcludeAudioTabs": false,
+            "prependTitleToWindow": false,
+            "exportToBookmarksWhenAutoBackup": true,
+            "leaveBookmarksOfClosedTabs": false,
+            "newTabContainer": "firefox-default",
+            "ifDifferentContainerReOpen": false,
+            "excludeContainersForReOpen": [],
+            "isSticky": false,
+            "catchTabContainers": [],
+            "catchTabRules": "",
+            "moveToGroupIfNoneCatchTabRules": null,
+            "muteTabsWhenGroupCloseAndRestoreWhenOpen": false,
+            "showTabAfterMovingItIntoThisGroup": false,
+            "showOnlyActiveTabAfterMovingItIntoThisGroup": false,
+            "showNotificationAfterMovingTabIntoThisGroup": true,
+            "bookmarkId": null
+        }
+    ],
+    "lastCreatedGroupPosition": 3,
+    "defaultGroupProps": {},
+    "closePopupAfterChangeGroup": true,
+    "closePopupAfterSelectTab": false,
+    "openGroupAfterChange": false,
+    "alwaysAskNewGroupName": true,
+    "createNewGroupWhenOpenNewWindow": false,
+    "openManageGroupsInTab": true,
+    "showConfirmDialogBeforeGroupArchiving": true,
+    "showConfirmDialogBeforeGroupDelete": true,
+    "showNotificationAfterGroupDelete": true,
+    "showContextMenuOnTabs": true,
+    "showContextMenuOnLinks": true,
+    "defaultBookmarksParent": "toolbar_____",
+    "showExtendGroupsPopupWithActiveTabs": false,
+    "showTabsWithThumbnailsInManageGroups": false,
+    "fullPopupWidth": false,
+    "temporaryContainerTitle": "⌚Temporary Container",
+    "contextMenuTab": [
+        "open-in-new-window",
+        "reload",
+        "discard",
+        "remove",
+        "update-thumbnail",
+        "set-group-icon",
+        "move-tab-to-group"
+    ],
+    "contextMenuGroup": [
+        "open-in-new-window",
+        "sort-asc",
+        "sort-desc",
+        "discard",
+        "discard-other",
+        "export-to-bookmarks",
+        "unload",
+        "archive",
+        "rename",
+        "reload-all-tabs"
+    ],
+    "autoBackupEnable": true,
+    "autoBackupLastBackupTimeStamp": 1717694800,
+    "autoBackupIntervalKey": "days",
+    "autoBackupIntervalValue": 1,
+    "autoBackupIncludeTabThumbnails": true,
+    "autoBackupIncludeTabFavIcons": true,
+    "autoBackupFolderName": "STG-backups-FF-126.0.1",
+    "autoBackupByDayIndex": true,
+    "theme": "auto",
+    "hotkeys": [
+        {
+            "value": "MacCtrl+Backquote",
+            "action": "load-next-group",
+            "groupId": 0
+        },
+        {
+            "value": "MacCtrl+Shift+Backquote",
+            "action": "load-prev-group",
+            "groupId": 0
+        }
+    ],
+    "pinnedTabs": [
+        {
+            "url": "https://docs.google.com/spreadsheets/d/1zpmAp8gxAF4sfEZehAYgVUdLQYisE1YXnXrd9ZNEThc/edit#gid=0",
+            "title": "MY STATS - Google Sheets",
+            "id": 3
+        },
+        {
+            "url": "https://www.youtube.com/watch?v=6z2HK4o8qcU&list=PLDzeHZWIZsTryvtXdMr6rPh4IDexB5NIA&index=15",
+            "title": "Lecture14: Binary Search Interview Questions [Google, Amazon, Microsoft] || ProblemSet - 2 - YouTube",
+            "id": 4
+        },
+        {
+            "url": "https://codeforces.com/contests/1979",
+            "title": "Codeforces Round 951 (Div. 2) - Codeforces",
+            "id": 5
+        },
+        {
+            "url": "https://leetcode.com/problemset/algorithms/",
+            "title": "Problems - LeetCode",
+            "id": 6
+        },
+        {
+            "url": "https://seek.onlinedegree.iitm.ac.in/courses/ns_24t2_cs2002?id=25&type=programming_assignment&tab=courses&unitId=7",
+            "title": "Outline :: IITM Online Degree",
+            "id": 7
+        },
+        {
+            "url": "https://atcoder.jp/contests/dp",
+            "title": "Educational DP Contest - AtCoder",
+            "id": 8
+        }
+    ]
+}
